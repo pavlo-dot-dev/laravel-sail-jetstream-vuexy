@@ -1,0 +1,83 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "strict": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "paths": {
+      "@/*": [
+        "resources/ts/*"
+      ],
+      "@themeConfig": [
+        "themeConfig.ts"
+      ],
+      "@layouts/*": [
+        "resources/ts/@layouts/*"
+      ],
+      "@layouts": [
+        "resources/ts/@layouts"
+      ],
+      "@core/*": [
+        "resources/ts/@core/*"
+      ],
+      "@core": [
+        "resources/ts/@core"
+      ],
+      "@images/*": [
+        "resources/images/*"
+      ],
+      "@styles/*": [
+        "resources/styles/*"
+      ],
+      "@axios": [
+        "resources/ts/plugins/axios"
+      ],
+      "@validators": [
+        "resources/ts/@core/utils/validators"
+      ],
+      "@core-scss/*": [
+        "resources/styles/@core"
+      ],
+      "ziggy": [
+        "vendor/tightenco/ziggy/dist/vue.es.js"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "skipLibCheck": true,
+    "types": [
+      "vite/client",
+      "vite-plugin-pages/client",
+      "vite-plugin-vue-layouts/client",
+      "unplugin-vue-define-options/macros-global",
+      "@types/node",
+      "@types/ziggy-js"
+    ]
+  },
+  "typeRoots": ["./node_modules/@types", "resources/ts/types"],
+  "include": [
+    "vite.config.*",
+    "resources/ts/**/*",
+    "resources/ts/**/*.vue",
+    "themeConfig.ts"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "resources/ts/@iconify/*"
+  ]
+}
